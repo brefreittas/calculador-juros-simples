@@ -16,11 +16,12 @@
 }
 
 .main {
-    margin: auto;
     background-color: #6E633D;
     border-radius: 20px;
     padding: 10px;
-    width: 600px;
+    min-width: 320px;
+    max-width: 600px;
+    margin: auto;
 }
 
 .res {
@@ -34,4 +35,8 @@ input {
     padding: 4px;
     border: none;
     border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    
 }
