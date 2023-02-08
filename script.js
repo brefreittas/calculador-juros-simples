@@ -10,16 +10,17 @@ function exec() {
     //Capturando o clique do usuario no botão de calcular
     document.addEventListener('click', (e) => {
         const element = e.target;
-        
+
         //Capturando as informações que foram escritas pelo user
         capital = document.querySelector('.capital').valueAsNumber;
         taxa = document.querySelector('.taxa').valueAsNumber;
         periodo = document.querySelector('.periodo').valueAsNumber;
         //Capturando o corpo da página
         main = document.querySelector('.main');
-        
+
         //Vendo se o botão clicado foi o de calcular
         if (element.classList.contains('btn-calcular')) {
+            //Verificando se todos os campos estão preenchidos
             if (isNaN(capital) || isNaN(taxa) || isNaN(periodo)) {
                 alert('Preencha todos os campos corretamente!');
             } else {
@@ -36,7 +37,6 @@ function exec() {
             }
         }
     });
-    
 }
 
 exec();
